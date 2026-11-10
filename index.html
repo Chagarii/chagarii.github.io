@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Joyce Chagarii: programme and portfolio delivery, PMO leadership. Case studies, method and sample governance toolkit.">
+<title>Joyce Chagarii Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+html { color-scheme: light; } body { margin: 0; } img { max-width: 100%; }
+/* Layout: one governed column, read top to bottom like a steering pack — case studies, method, then sample artefacts */
+:root {
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --ink: #16202b;
+  --muted: #56616e;
+  --line: #d9dee5;
+  --accent: #1f3a5f;      /* governance navy, matches the CV */
+  --gate: #b5651d;        /* stage-gate marker */
+  --soft: #e9eef5;
+  --g: #2f7d4f; --a: #b7791f; --r: #b33a3a;
+  --g-bg: #e3f2e8; --a-bg: #fbf0dc; --r-bg: #f8e3e3;
+  --f-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Source Sans 3", "Segoe UI", Roboto, Arial, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f151c; --surface: #161e28; --ink: #e6ebf1; --muted: #9aa6b4; --line: #2a3542;
+  --accent: #8fb1dc; --gate: #e09a55; --soft: #1c2735;
+  --g: #6cc48f; --a: #e0b45c; --r: #ec8585; --g-bg: #17301f; --a-bg: #33280f; --r-bg: #3a1a1a;
+  color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0f151c; --surface: #161e28; --ink: #e6ebf1; --muted: #9aa6b4; --line: #2a3542;
+  --accent: #8fb1dc; --gate: #e09a55; --soft: #1c2735;
+  --g: #6cc48f; --a: #e0b45c; --r: #ec8585; --g-bg: #17301f; --a-bg: #33280f; --r-bg: #3a1a1a;
+  color-scheme: dark }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 17px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: 980px; margin: 0 auto; padding-block: 48px 72px; display: grid; gap: 64px; }
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; line-height: 1.15; }
+h1 { font-size: clamp(2.1rem, 5vw, 3.1rem); font-weight: 800; letter-spacing: -0.01em; }
+h2 { font-size: 1.65rem; font-weight: 700; }
+h3 { font-size: 1.2rem; font-weight: 700; }
+p { margin: 0; max-width: 68ch; }
+.eyebrow { font-family: var(--f-mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gate); }
+.muted { color: var(--muted); }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--gate); outline-offset: 2px; }
+section { display: grid; gap: 24px; }
+.sec-head { display: grid; gap: 8px; border-top: 2px solid var(--accent); padding-top: 16px; }
+
+/* header */
+header { display: grid; gap: 20px; }
+.role { font-family: var(--f-display); font-weight: 600; color: var(--accent); font-size: 1.15rem; }
+.contact { display: flex; flex-wrap: wrap; gap: 10px 24px; align-items: center; font-size: 0.95rem; }
+.contact code { font-family: var(--f-mono); font-size: 0.9rem; background: var(--soft); padding: 2px 8px; border-radius: 4px; user-select: all; }
+.copy { font: 500 0.82rem var(--f-body); border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 4px; padding: 3px 10px; cursor: pointer; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.fact { background: var(--surface); padding: 14px 16px; display: grid; gap: 2px; }
+.fact b { font-family: var(--f-mono); font-weight: 500; font-size: 1.35rem; color: var(--accent); font-variant-numeric: tabular-nums; }
+.fact span { font-size: 0.88rem; color: var(--muted); line-height: 1.35; }
+
+/* case studies */
+.case { background: var(--surface); border: 1px solid var(--line); display: grid; grid-template-columns: minmax(0, 1fr) 250px; }
+.case-main { padding: 24px; display: grid; gap: 14px; min-width: 0; }
+.case-side { border-left: 1px solid var(--line); background: var(--soft); padding: 20px; display: grid; gap: 12px; align-content: start; }
+.kv { display: grid; gap: 1px; }
+.kv dt { font-family: var(--f-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.kv dd { margin: 0; font-weight: 600; font-size: 0.98rem; }
+.case h4 { margin: 0; font-family: var(--f-display); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); }
+.case ul { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+.note { font-size: 0.85rem; color: var(--muted); font-style: italic; }
+@media (max-width: 720px) { .case { grid-template-columns: 1fr; } .case-side { border-left: 0; border-top: 1px solid var(--line); } }
+
+/* method */
+.principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px 28px; }
+.principles div { display: grid; gap: 4px; border-left: 3px solid var(--line); padding-left: 14px; }
+.principles strong { font-family: var(--f-display); font-weight: 600; }
+.plan { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.plan > div { background: var(--surface); border: 1px solid var(--line); padding: 18px; display: grid; gap: 8px; align-content: start; }
+.plan .day { font-family: var(--f-mono); color: var(--gate); font-size: 0.85rem; }
+.plan ul { margin: 0; padding-left: 18px; font-size: 0.95rem; display: grid; gap: 4px; }
+@media (max-width: 720px) { .plan { grid-template-columns: 1fr; } }
+
+/* toolkit */
+.sample { background: var(--surface); border: 1px solid var(--line); padding: 22px; display: grid; gap: 16px; min-width: 0; }
+.sample-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
+.tag { font-family: var(--f-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; border: 1px dashed var(--muted); color: var(--muted); padding: 2px 8px; border-radius: 3px; }
+.lifecycle { display: flex; flex-wrap: wrap; gap: 8px; align-items: stretch; }
+.stage { flex: 1 1 140px; min-width: 0; border: 1px solid var(--line); background: var(--soft); padding: 12px; display: grid; gap: 6px; align-content: start; }
+.stage b { font-family: var(--f-display); font-size: 0.98rem; }
+.stage .g { font-family: var(--f-mono); font-size: 0.72rem; color: var(--gate); }
+.stage p { font-size: 0.85rem; color: var(--muted); line-height: 1.4; }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem; min-width: 620px; }
+th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-family: var(--f-mono); font-weight: 500; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+td.num { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+.rag { display: inline-block; font-family: var(--f-mono); font-size: 0.75rem; font-weight: 500; padding: 2px 8px; border-radius: 10px; }
+.rag.G { color: var(--g); background: var(--g-bg); } .rag.A { color: var(--a); background: var(--a-bg); } .rag.R { color: var(--r); background: var(--r-bg); }
+.ragbar { display: flex; height: 14px; border-radius: 3px; overflow: hidden; }
+.ragbar span { display: block; }
+.ragsum { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 0.9rem; }
+.ragsum b { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+.steer { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.steer > div { border: 1px solid var(--line); padding: 14px; display: grid; gap: 6px; align-content: start; }
+.steer h4 { margin: 0; font-family: var(--f-mono); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.steer ul { margin: 0; padding-left: 18px; font-size: 0.93rem; display: grid; gap: 4px; }
+@media (max-width: 720px) { .steer { grid-template-columns: 1fr; } }
+
+/* credentials + career */
+.creds { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.cred { background: var(--surface); border: 1px solid var(--line); padding: 14px 16px; display: grid; gap: 2px; }
+.cred b { font-family: var(--f-display); font-weight: 600; }
+.cred code { font-family: var(--f-mono); font-size: 0.82rem; color: var(--muted); }
+.timeline { display: grid; gap: 0; border-left: 2px solid var(--line); margin-left: 6px; }
+.timeline div { padding: 0 0 16px 18px; position: relative; display: grid; gap: 2px; }
+.timeline div::before { content: ""; position: absolute; left: -7px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--accent); }
+.timeline .when { font-family: var(--f-mono); font-size: 0.8rem; color: var(--muted); }
+footer { border-top: 1px solid var(--line); padding-top: 20px; font-size: 0.9rem; color: var(--muted); display: grid; gap: 6px; }
+
+/* sub-groups inside the toolkit */
+.group { display: grid; gap: 16px; }
+.group-title { font-family: var(--f-mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+.two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 760px) { .two { grid-template-columns: 1fr; } }
+
+/* real before/after bars */
+.ba { display: grid; gap: 10px; }
+.ba-row { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 10px; align-items: center; font-size: 0.9rem; }
+.ba-track { background: var(--line); height: 22px; border-radius: 3px; overflow: hidden; }
+.ba-fill { height: 100%; display: flex; align-items: center; justify-content: flex-end; padding-right: 8px; font-family: var(--f-mono); font-size: 0.78rem; color: #fff; }
+.ba-fill.before { background: var(--muted); width: 100%; }
+.ba-fill.after { background: var(--accent); width: 66.7%; }
+:root[data-theme="dark"] .ba-fill { color: var(--bg); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .ba-fill { color: var(--bg); } }
+.outcomes { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+.outcomes div { border: 1px solid var(--line); padding: 10px 12px; font-size: 0.92rem; display: grid; gap: 2px; }
+.outcomes b { font-family: var(--f-display); font-weight: 600; color: var(--accent); }
+.measures { display: flex; flex-wrap: wrap; gap: 6px; }
+.measures span { font-family: var(--f-mono); font-size: 0.75rem; border: 1px solid var(--line); background: var(--soft); padding: 3px 8px; border-radius: 3px; }
+
+/* charts */
+.chart { width: 100%; height: auto; display: block; }
+.chart .grid { stroke: var(--line); stroke-width: 1; }
+.chart .axis { fill: var(--muted); font-family: var(--f-mono); font-size: 11px; }
+.chart .val { fill: var(--ink); font-family: var(--f-mono); font-size: 11px; }
+.chart .bar { fill: var(--accent); }
+.chart .band { fill: var(--g-bg); }
+.chart .bandlabel { fill: var(--g); font-family: var(--f-mono); font-size: 10px; }
+.chart .line { fill: none; stroke: var(--accent); stroke-width: 2.5; }
+.chart .dot { fill: var(--surface); stroke: var(--accent); stroke-width: 2; }
+.chart .dot.end { fill: var(--accent); }
+.caption { font-size: 0.85rem; color: var(--muted); }
+.trend { font-family: var(--f-mono); font-size: 0.8rem; }
+.trend.up { color: var(--g); } .trend.down { color: var(--r); } .trend.flat { color: var(--a); }
+
+/* ROAM board */
+.roam { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.roam > div { background: var(--soft); border: 1px solid var(--line); padding: 10px; display: grid; gap: 8px; align-content: start; }
+.roam h4 { margin: 0; font-family: var(--f-display); font-size: 0.95rem; }
+.roam h4 small { display: block; font-family: var(--f-body); font-weight: 400; font-size: 0.78rem; color: var(--muted); }
+.card { background: var(--surface); border: 1px solid var(--line); padding: 8px; font-size: 0.85rem; line-height: 1.4; }
+@media (max-width: 760px) { .roam { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* stakeholder grid */
+.sgrid { display: grid; grid-template-columns: 26px minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: auto auto 22px; gap: 8px; }
+.sgrid .ylab { grid-row: 1 / 3; writing-mode: vertical-rl; transform: rotate(180deg); text-align: center; font-family: var(--f-mono); font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.sgrid .xlab { grid-column: 2 / 4; text-align: center; font-family: var(--f-mono); font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.quad { border: 1px solid var(--line); padding: 10px; display: grid; gap: 6px; align-content: start; min-height: 110px; }
+.quad.key { background: var(--soft); border-color: var(--accent); }
+.quad b { font-family: var(--f-display); font-size: 0.9rem; }
+.quad .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.quad .chips span { font-size: 0.8rem; background: var(--surface); border: 1px solid var(--line); padding: 2px 7px; border-radius: 10px; }
+.raci td.c { text-align: center; font-family: var(--f-mono); font-weight: 500; }
+.raci td.A { color: var(--gate); }
+
+/* judgment stories */
+.stories { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.story { background: var(--surface); border: 1px solid var(--line); padding: 20px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.story dl { margin: 0; display: grid; gap: 8px; }
+.story dt { font-family: var(--f-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gate); }
+.story dd { margin: 0; font-size: 0.95rem; }
+@media (max-width: 760px) { .stories { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Delivery portfolio</div>
+  <h1>Joyce Chagarii</h1>
+  <div class="role">Programme &amp; Portfolio Delivery · PMO Leadership</div>
+  <p>I lead technology programmes and build the governance that keeps a portfolio on track. Fifteen years in technology, twelve of them in delivery, across energy, retail, enterprise technology, the public sector and regulated payments in East and West Africa.</p>
+  <div class="contact">
+    <span><code id="email">jchagarii@outlook.com</code> <button class="copy" id="copyEmail" type="button">Copy email</button></span>
+    <a href="https://www.linkedin.com/in/joyce-chagarii/" target="_blank" rel="noopener">linkedin.com/in/joyce-chagarii</a>
+    <span class="muted">Nairobi, Kenya</span>
+  </div>
+  <div class="facts">
+    <div class="fact"><b>KES 1B+</b><span>in technology projects delivered</span></div>
+    <div class="fact"><b>KES 650M</b><span>across three Kenya Power programmes</span></div>
+    <div class="fact"><b>110</b><span>projects in the portfolio I report on today</span></div>
+    <div class="fact"><b>32 sites</b><span>consolidated under PRINCE2, within budget</span></div>
+    <div class="fact"><b>5 PIs</b><span>planned and run across 5 squads in East Africa</span></div>
+  </div>
+</header>
+
+<section>
+  <div class="sec-head">
+    <div class="eyebrow">Case studies</div>
+    <h2>Four programmes, start to finish</h2>
+  </div>
+
+  <article class="case">
+    <div class="case-main">
+      <div class="eyebrow">Interswitch East Africa</div>
+      <h3>Running PI planning across five squads in East Africa</h3>
+      <h4>The problem</h4>
+      <p>Five delivery squads were working on sprints that averaged 21 days, with outputs that were hard to measure. Cross-team dependencies surfaced late, work arrived at sprints under-refined, and problems reached leadership as escalations.</p>
+      <h4>What I did</h4>
+      <ul>
+        <li>Facilitate Programme Increment (PI) planning for the region, and run Scrum of Scrums across five squads and six Scrum Masters.</li>
+        <li>Moved the squads to a fixed 14-day sprint cadence, with each sprint tied to measurable results and milestones.</li>
+        <li>Surface more than 20 cross-team dependencies at every PI planning event, so they are owned before they block delivery.</li>
+        <li>Use PI outcomes to tell clients when to expect each milestone, instead of committing dates before teams have planned.</li>
+        <li>Report predictability, velocity and delivery risk to EXCO through a dashboard leadership now uses.</li>
+      </ul>
+      <h4>What changed</h4>
+      <p class="caption">Average sprint length</p>
+      <div class="ba" aria-label="Average sprint length, before and now">
+        <div class="ba-row"><span>Before</span><div class="ba-track"><div class="ba-fill before">21 days</div></div></div>
+        <div class="ba-row"><span>Now</span><div class="ba-track"><div class="ba-fill after">14 days</div></div></div>
+      </div>
+      <p class="caption">Projects delivered per PI</p>
+      <div class="ba" aria-label="Projects delivered: 45 in PI 1, 70 in PI 5">
+        <div class="ba-row"><span>PI 1</span><div class="ba-track"><div class="ba-fill before" style="width:64.3%">45</div></div></div>
+        <div class="ba-row"><span>PI 5</span><div class="ba-track"><div class="ba-fill after" style="width:100%">70 of 109</div></div></div>
+      </div>
+      <div class="outcomes">
+        <div><b>45 → 70 delivered</b><span>Projects delivered per PI, first PI to latest: up 56%</span></div>
+        <div><b>Faster execution</b><span>Shorter sprints, more focused teams, milestones moving every sprint</span></div>
+        <div><b>Fewer escalations</b><span>Dependencies and risks handled at planning, not in EXCO</span></div>
+        <div><b>Better-refined work</b><span>Backlog items arrive ready for the sprint</span></div>
+        <div><b>Dashboard adopted</b><span>Leadership reads delivery health from one view</span></div>
+      </div>
+      <h4>What I measure across the squads</h4>
+      <div class="measures"><span>Predictability</span><span>Velocity</span><span>Cycle time</span><span>Release frequency</span><span>Escaped defects</span><span>UAT pass rate</span><span>Go-lives on schedule</span></div>
+    </div>
+    <aside class="case-side">
+      <dl class="kv"><dt>PIs run</dt><dd>5 since Oct 2025</dd></dl>
+      <dl class="kv"><dt>Latest PI</dt><dd>70 of 109 projects delivered</dd></dl>
+      <dl class="kv"><dt>Squads</dt><dd>5 teams, 6 Scrum Masters</dd></dl>
+      <dl class="kv"><dt>Sprint cadence</dt><dd>21 → 14 days</dd></dl>
+      <dl class="kv"><dt>Dependencies</dt><dd>20+ surfaced per PI</dd></dl>
+      <dl class="kv"><dt>Reporting</dt><dd>EXCO</dd></dl>
+      <dl class="kv"><dt>Framework</dt><dd>SAFe, Scrum of Scrums</dd></dl>
+    </aside>
+  </article>
+
+  <article class="case">
+    <div class="case-main">
+      <div class="eyebrow">Kenya Power &amp; Lighting Company</div>
+      <h3>Consolidating infrastructure across 32 sites</h3>
+      <h4>The problem</h4>
+      <p>Infrastructure was spread across 32 regional sites. Keeping it running meant constant travel and duplicated running costs, and support depended on people being physically on site.</p>
+      <h4>What I did</h4>
+      <ul>
+        <li>Proposed the consolidation and made the case for it: centralise infrastructure at the Nairobi HQ and disaster recovery sites and decommission regional infrastructure.</li>
+        <li>Ran the programme under PRINCE2: a steering committee, a documented business case, stage gates and a live risk and issues register.</li>
+        <li>Managed three external vendors, with payments tied to milestone acceptance and formal change control to stop scope creep eroding the budget.</li>
+        <li>Coordinated IT, operations, finance, procurement and regional field teams, and trained around 120 staff and field staff after rollout.</li>
+      </ul>
+      <h4>The result</h4>
+      <p>Delivered within budget over 14 months. Six months after go-live, operations were running the estate independently with stable performance.</p>
+    </div>
+    <aside class="case-side">
+      <dl class="kv"><dt>Value</dt><dd>KES 300M</dd></dl>
+      <dl class="kv"><dt>Duration</dt><dd>14 months</dd></dl>
+      <dl class="kv"><dt>Scale</dt><dd>32 sites</dd></dl>
+      <dl class="kv"><dt>Governance</dt><dd>PRINCE2, stage gates</dd></dl>
+      <dl class="kv"><dt>Vendors</dt><dd>3, milestone-paid</dd></dl>
+    </aside>
+  </article>
+
+  <article class="case">
+    <div class="case-main">
+      <div class="eyebrow">Kenya Power &amp; Lighting Company</div>
+      <h3>Citrix migration and a security and network upgrade</h3>
+      <h4>The problem</h4>
+      <p>The Citrix estate serving users across more than 50 sites needed migrating and upgrading, and the security infrastructure and network needed a parallel upgrade, without disrupting a utility that runs around the clock.</p>
+      <h4>What I did</h4>
+      <ul>
+        <li>Delivered the Citrix migration and upgrade across more than 50 user sites.</li>
+        <li>Delivered the security infrastructure and network upgrade.</li>
+        <li>Ran vendor evaluation, RFP coordination and technical bid assessment, and supported contract negotiations and post-contract monitoring with Supply Chain and Risk.</li>
+        <li>Kept project and security risk registers and reported KPIs, risks and status to senior management.</li>
+      </ul>
+      <h4>The result</h4>
+      <p>Both programmes delivered, adding KES 350M to the infrastructure portfolio I delivered at Kenya Power.</p>
+    </div>
+    <aside class="case-side">
+      <dl class="kv"><dt>Citrix migration</dt><dd>KES 150M</dd></dl>
+      <dl class="kv"><dt>Reach</dt><dd>50+ user sites</dd></dl>
+      <dl class="kv"><dt>Security &amp; network</dt><dd>KES 200M</dd></dl>
+      <dl class="kv"><dt>Delivery model</dt><dd>Multi-vendor</dd></dl>
+    </aside>
+  </article>
+
+  <article class="case">
+    <div class="case-main">
+      <div class="eyebrow">Interswitch East Africa</div>
+      <h3>Delivering payment platforms in a scheme-regulated environment</h3>
+      <h4>The problem</h4>
+      <p>A payment gateway and a bank's merchant acquiring platform had to go live in an environment where Visa and Mastercard scheme rules, settlement accuracy and partner banks all set hard constraints.</p>
+      <h4>What I did</h4>
+      <ul>
+        <li>Managed both platforms end to end, from requirements and planning through testing, go-live and handover to support.</li>
+        <li>Acted as Scrum Master for the merchant acquiring and payment gateway squads, running Scrum of Scrums across them.</li>
+        <li>Wrote the test strategies and coordinated UAT, system integration and regression testing.</li>
+        <li>Trained six partner institutions, two of them banks, on onboarding and platform operations.</li>
+      </ul>
+      <h4>The result</h4>
+      <p>Interswitch's standard payment gateway and a Kenyan commercial bank's merchant acquiring platform delivered and handed over to support.</p>
+      <p class="note">Client names, volumes and commercial details are withheld under confidentiality.</p>
+    </div>
+    <aside class="case-side">
+      <dl class="kv"><dt>Domain</dt><dd>Merchant acquiring, gateways</dd></dl>
+      <dl class="kv"><dt>Compliance</dt><dd>Visa / Mastercard schemes</dd></dl>
+      <dl class="kv"><dt>Method</dt><dd>Agile, Scrum of Scrums</dd></dl>
+      <dl class="kv"><dt>Partners trained</dt><dd>6 institutions</dd></dl>
+    </aside>
+  </article>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="eyebrow">Judgment</div>
+    <h2>When delivery gets hard</h2>
+    <p class="muted">Situations every delivery leader meets, and how I handled them. Client and vendor names are withheld.</p>
+  </div>
+  <div class="stories">
+    <div class="story">
+      <h3>A vendor missed its delivery date</h3>
+      <dl>
+        <dt>Situation</dt><dd>A vendor delivered late, putting the agreed go-live at risk.</dd>
+        <dt>What I did</dt><dd>Escalated on the contract and held the vendor to its milestones and a recovery plan. Went to the client early and agreed a new go-live date, instead of letting the original one slip.</dd>
+        <dt>Result</dt><dd>Went live on the revised date the client had agreed to.</dd>
+      </dl>
+    </div>
+    <div class="story">
+      <h3>A squad that kept missing its commitments</h3>
+      <dl>
+        <dt>Situation</dt><dd>One squad was regularly missing its sprint commitments.</dd>
+        <dt>What I did</dt><dd>Had the squad commit to its real capacity instead of over-committing at sprint planning, and made dependencies and blockers a check before each sprint rather than a surprise during it.</dd>
+        <dt>Result</dt><dd>The squad started meeting its sprint commitments.</dd>
+      </dl>
+    </div>
+    <div class="story">
+      <h3>New work pushed in mid-PI</h3>
+      <dl>
+        <dt>Situation</dt><dd>Leadership asked for new work in the middle of a PI, on top of what the squads had already committed to.</dd>
+        <dt>What I did</dt><dd>Pushed back at EXCO to protect the PI commitments. Made the trade-off explicit: the new work had to move to the next PI or replace something already committed.</dd>
+        <dt>Result</dt><dd>PI commitments held. The new work went into the next PI or was traded against existing objectives.</dd>
+      </dl>
+    </div>
+    <div class="story">
+      <h3>Holding the line close to release</h3>
+      <dl>
+        <dt>Situation</dt><dd>Late change requests arrived close to release, and client milestones were at risk of being promised before teams had planned them.</dd>
+        <dt>What I did</dt><dd>Refused late changes that would put a release at risk, and introduced a Definition of Ready so work only enters a sprint when it is ready. When a client milestone had to move, I told the client and managed that conversation directly.</dd>
+        <dt>Result</dt><dd>Better-refined work reaching the squads, and client milestone dates set from PI planning rather than guessed.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="eyebrow">Method</div>
+    <h2>How I run a PMO</h2>
+  </div>
+  <div class="principles">
+    <div><strong>One source of truth</strong><span class="muted">Every project reports the same way, so leadership reads one portfolio view instead of reconciling spreadsheets.</span></div>
+    <div><strong>Gates that fit the risk</strong><span class="muted">Stage gates scale with a project's value and exposure. Small changes move fast; large programmes earn each next stage.</span></div>
+    <div><strong>Clear decision rights</strong><span class="muted">Everyone knows what a PM can decide, what goes to the sponsor and what goes to the steering committee.</span></div>
+    <div><strong>Capacity before commitment</strong><span class="muted">New work is agreed against the people actually available, so the portfolio stops promising more than it can deliver.</span></div>
+    <div><strong>Vendors paid on outcomes</strong><span class="muted">Payments tie to accepted milestones, and change control protects the budget.</span></div>
+    <div><strong>Measured on outcome, not output</strong><span class="muted">A project closes when its benefit is tracked and support owns it, after a short pilot monitoring window.</span></div>
+  </div>
+  <div class="plan">
+    <div><span class="day">Days 1–30</span><b>Understand</b><ul><li>Meet sponsors and delivery leads</li><li>Baseline every project: status, budget, risks</li><li>Find where reporting and reality differ</li></ul></div>
+    <div><span class="day">Days 31–60</span><b>Standardise</b><ul><li>One status template and RAID log</li><li>Stage gates and decision rights agreed</li><li>Capacity view across teams</li></ul></div>
+    <div><span class="day">Days 61–90</span><b>Run</b><ul><li>Portfolio dashboard live for leadership</li><li>First steering cycle on the new cadence</li><li>Re-prioritise against capacity</li></ul></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="eyebrow">Sample toolkit</div>
+    <h2>The dashboards and artefacts I build</h2>
+    <p class="muted">Templates I designed for this portfolio to show how I plan, track and report. Every project, name and figure in this section is illustrative and is not employer data.</p>
+  </div>
+
+  <div class="group">
+    <div class="group-title">Governance</div>
+
+    <div class="sample">
+      <div class="sample-head"><h3>Project lifecycle with stage gates</h3><span class="tag">Illustrative</span></div>
+      <div class="lifecycle">
+        <div class="stage"><span class="g">Gate 0 → 1</span><b>Initiate</b><p>Business case, sponsor, high-level scope approved</p></div>
+        <div class="stage"><span class="g">Gate 1 → 2</span><b>Plan</b><p>Baseline plan, budget, RAID log and resourcing signed off</p></div>
+        <div class="stage"><span class="g">Gate 2 → 3</span><b>Build</b><p>Sprints or work packages against agreed acceptance criteria</p></div>
+        <div class="stage"><span class="g">Gate 3 → 4</span><b>Test</b><p>SIT, regression and UAT passed; go-live readiness checked</p></div>
+        <div class="stage"><span class="g">Gate 4 → 5</span><b>Go-live &amp; pilot</b><p>Short pilot monitoring window with defined exit criteria</p></div>
+        <div class="stage"><span class="g">Gate 5</span><b>Handover &amp; close</b><p>Support owns it; lessons learned and benefits tracking in place</p></div>
+      </div>
+    </div>
+
+    <div class="sample">
+      <div class="sample-head"><h3>Portfolio dashboard</h3><span class="tag">Illustrative data · 24 projects</span></div>
+      <div class="ragbar" role="img" aria-label="15 green, 6 amber, 3 red">
+        <span style="width:62.5%;background:var(--g)"></span><span style="width:25%;background:var(--a)"></span><span style="width:12.5%;background:var(--r)"></span>
+      </div>
+      <div class="ragsum"><span><b>15</b> on track</span><span><b>6</b> at risk</span><span><b>3</b> off track</span><span class="muted">Next steering review: week 2</span></div>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Project</th><th>Status</th><th>Stage</th><th>Next milestone</th><th>Budget used</th><th>Key issue</th></tr></thead>
+          <tbody>
+            <tr><td>Branch network refresh</td><td><span class="rag G">Green</span></td><td>Build</td><td>Site 6 cutover</td><td class="num">48%</td><td>None</td></tr>
+            <tr><td>CRM migration</td><td><span class="rag A">Amber</span></td><td>Test</td><td>UAT sign-off</td><td class="num">71%</td><td>UAT defects above threshold</td></tr>
+            <tr><td>Mobile onboarding v2</td><td><span class="rag R">Red</span></td><td>Build</td><td>Vendor API delivery</td><td class="num">66%</td><td>Vendor two weeks late</td></tr>
+            <tr><td>HR system rollout</td><td><span class="rag G">Green</span></td><td>Plan</td><td>Gate 2 review</td><td class="num">12%</td><td>None</td></tr>
+            <tr><td>DR failover test</td><td><span class="rag A">Amber</span></td><td>Go-live</td><td>Pilot exit</td><td class="num">90%</td><td>Shared engineers on two projects</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="sample">
+      <div class="sample-head"><h3>Steering committee one-pager</h3><span class="tag">Illustrative</span></div>
+      <div class="steer">
+        <div><h4>Overall status</h4><p><span class="rag A">Amber</span> Go-live holds if the vendor delivers by week 9. Budget at 66% against 60% of time elapsed.</p></div>
+        <div><h4>Decisions needed today</h4><ul><li>Approve two-week contingency on vendor milestone</li><li>Release one engineer from DR test to integration</li></ul></div>
+        <div><h4>Since last meeting</h4><ul><li>Gate 2 passed on HR system rollout</li><li>CRM UAT started; defect triage running daily</li></ul></div>
+        <div><h4>Top risks</h4><ul><li>R-04 Vendor API slip (high)</li><li>Shared engineering capacity across two projects</li></ul></div>
+      </div>
+    </div>
+
+    <div class="sample">
+      <div class="sample-head"><h3>RAID log</h3><span class="tag">Illustrative</span></div>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>ID</th><th>Type</th><th>Description</th><th>Impact</th><th>Owner</th><th>Action</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td class="num">R-04</td><td>Risk</td><td>Vendor API delivery slips past the integration window</td><td><span class="rag R">High</span></td><td>PM</td><td>Weekly vendor checkpoint; mock API for parallel testing</td><td>Open</td></tr>
+            <tr><td class="num">A-02</td><td>Assumption</td><td>Bank test environment available from week 6</td><td><span class="rag A">Med</span></td><td>Partner lead</td><td>Confirm in writing at next partner call</td><td>Open</td></tr>
+            <tr><td class="num">I-07</td><td>Issue</td><td>UAT defects above agreed threshold</td><td><span class="rag A">Med</span></td><td>QA lead</td><td>Daily triage; go-live gated on fix rate</td><td>In progress</td></tr>
+            <tr><td class="num">D-03</td><td>Dependency</td><td>Network change window needed before cutover</td><td><span class="rag G">Low</span></td><td>Infra lead</td><td>Change request raised with CAB</td><td>Closed</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="group-title">Agile delivery at scale</div>
+
+    <div class="sample">
+      <div class="sample-head"><h3>Delivery health scorecard</h3><span class="tag">Illustrative data · one PI</span></div>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Measure</th><th>Target</th><th>This PI</th><th>Last PI</th><th>Trend</th><th>Status</th></tr></thead>
+          <tbody>
+                        <tr><td>Sprint commitments met</td><td class="num">≥ 85%</td><td class="num">88%</td><td class="num">82%</td><td><span class="trend up">▲ improving</span></td><td><span class="rag G">On target</span></td></tr>
+            <tr><td>Median cycle time</td><td class="num">≤ 6 days</td><td class="num">7 days</td><td class="num">9 days</td><td><span class="trend up">▲ improving</span></td><td><span class="rag A">Close</span></td></tr>
+            <tr><td>Releases to production</td><td class="num">1 per sprint</td><td class="num">6</td><td class="num">4</td><td><span class="trend up">▲ improving</span></td><td><span class="rag G">On target</span></td></tr>
+            <tr><td>Escaped defects</td><td class="num">≤ 3 per PI</td><td class="num">2</td><td class="num">5</td><td><span class="trend up">▲ improving</span></td><td><span class="rag G">On target</span></td></tr>
+            <tr><td>UAT first-pass rate</td><td class="num">≥ 90%</td><td class="num">87%</td><td class="num">88%</td><td><span class="trend flat">► flat</span></td><td><span class="rag A">Close</span></td></tr>
+            <tr><td>Go-lives on schedule</td><td class="num">≥ 90%</td><td class="num">92%</td><td class="num">80%</td><td><span class="trend up">▲ improving</span></td><td><span class="rag G">On target</span></td></tr>
+            <tr><td>Dependencies resolved before blocking</td><td class="num">≥ 85%</td><td class="num">82%</td><td class="num">70%</td><td><span class="trend up">▲ improving</span></td><td><span class="rag A">Close</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+      <div class="sample">
+        <div class="sample-head"><h3>Velocity stability</h3><span class="tag">Illustrative</span></div>
+        <svg class="chart" viewBox="0 0 520 220" role="img" aria-label="Story points per sprint over ten sprints, swinging between 27 and 44 early, then holding between 35 and 38">
+          <line class="grid" x1="50" x2="500" y1="190" y2="190"/><line class="grid" x1="50" x2="500" y1="156" y2="156"/><line class="grid" x1="50" x2="500" y1="122" y2="122"/><line class="grid" x1="50" x2="500" y1="88" y2="88"/><line class="grid" x1="50" x2="500" y1="54" y2="54"/><line class="grid" x1="50" x2="500" y1="20" y2="20"/>
+          <text class="axis" x="42" y="194" text-anchor="end">0</text><text class="axis" x="42" y="160" text-anchor="end">10</text><text class="axis" x="42" y="126" text-anchor="end">20</text><text class="axis" x="42" y="92" text-anchor="end">30</text><text class="axis" x="42" y="58" text-anchor="end">40</text><text class="axis" x="42" y="24" text-anchor="end">50</text>
+          <rect class="band" x="250" y="54" width="250" height="20.4"/>
+          <text class="bandlabel" x="496" y="49" text-anchor="end">Stable range</text>
+          <polyline class="line" points="50,84.6 100,40.4 150,98.2 200,54 250,67.6 300,60.8 350,71 400,64.2 450,67.6 500,60.8"/>
+          <circle class="dot" cx="50" cy="84.6" r="3.5"/><circle class="dot" cx="100" cy="40.4" r="3.5"/><circle class="dot" cx="150" cy="98.2" r="3.5"/><circle class="dot" cx="200" cy="54" r="3.5"/><circle class="dot" cx="250" cy="67.6" r="3.5"/><circle class="dot" cx="300" cy="60.8" r="3.5"/><circle class="dot" cx="350" cy="71" r="3.5"/><circle class="dot" cx="400" cy="64.2" r="3.5"/><circle class="dot" cx="450" cy="67.6" r="3.5"/><circle class="dot end" cx="500" cy="60.8" r="4.5"/>
+          <text class="axis" x="50" y="210" text-anchor="middle">S1</text><text class="axis" x="150" y="210" text-anchor="middle">S3</text><text class="axis" x="250" y="210" text-anchor="middle">S5</text><text class="axis" x="350" y="210" text-anchor="middle">S7</text><text class="axis" x="450" y="210" text-anchor="middle">S9</text>
+        </svg>
+        <p class="caption">Story points per sprint. I use the trend to plan capacity, never to compare squads.</p>
+      </div>
+
+    <div class="sample">
+      <div class="sample-head"><h3>Cross-team dependency board</h3><span class="tag">Illustrative data · 22 dependencies this PI</span></div>
+      <div class="ragsum"><span><b>17</b> resolved</span><span><b>3</b> in progress</span><span><b>2</b> at risk</span></div>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>ID</th><th>Needed by</th><th>Provided by</th><th>What</th><th>Needed in</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td class="num">DEP-07</td><td>Gateway squad</td><td>Settlement squad</td><td>New settlement file format</td><td>Sprint 2</td><td><span class="rag G">Resolved</span></td></tr>
+            <tr><td class="num">DEP-11</td><td>Merchant squad</td><td>Risk team</td><td>Updated onboarding risk rules</td><td>Sprint 3</td><td><span class="rag G">Resolved</span></td></tr>
+            <tr><td class="num">DEP-14</td><td>Mobile squad</td><td>External vendor</td><td>Partner API in test environment</td><td>Sprint 3</td><td><span class="rag R">At risk</span></td></tr>
+            <tr><td class="num">DEP-18</td><td>Gateway squad</td><td>Infrastructure</td><td>Load-test environment</td><td>Sprint 4</td><td><span class="rag A">In progress</span></td></tr>
+            <tr><td class="num">DEP-21</td><td>Card squad</td><td>Compliance</td><td>Scheme compliance sign-off</td><td>Sprint 5</td><td><span class="rag A">In progress</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="sample">
+      <div class="sample-head"><h3>PI risk board (ROAM)</h3><span class="tag">Illustrative</span></div>
+      <div class="roam">
+        <div><h4>Resolved<small>No longer a risk</small></h4><div class="card">Test data for bank integration now provisioned</div><div class="card">Release window agreed with operations</div></div>
+        <div><h4>Owned<small>Someone is on it</small></h4><div class="card">Vendor API delay. Owner: delivery lead, weekly checkpoint</div><div class="card">Load testing capacity. Owner: infra lead</div></div>
+        <div><h4>Accepted<small>Can't change, planned around</small></h4><div class="card">Public holiday shortens sprint 4</div></div>
+        <div><h4>Mitigated<small>Impact reduced</small></h4><div class="card">Key-person risk on settlement: second engineer paired in</div><div class="card">Scope buffer held for unplanned regulatory work</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="group-title">Stakeholder management</div>
+    <div class="two">
+      <div class="sample">
+        <div class="sample-head"><h3>Stakeholder map</h3><span class="tag">Illustrative</span></div>
+        <div class="sgrid">
+          <div class="ylab">Influence →</div>
+          <div class="quad"><b>Keep satisfied</b><div class="chips"><span>Finance</span><span>Card schemes</span><span>Compliance</span></div></div>
+          <div class="quad key"><b>Manage closely</b><div class="chips"><span>EXCO</span><span>Country heads</span><span>Partner banks</span><span>Product owners</span></div></div>
+          <div class="quad"><b>Monitor</b><div class="chips"><span>Procurement</span><span>Facilities</span></div></div>
+          <div class="quad"><b>Keep informed</b><div class="chips"><span>Delivery squads</span><span>Operations</span><span>Support</span><span>Merchants</span></div></div>
+          <div class="xlab">Interest →</div>
+        </div>
+        <p class="caption">Each quadrant gets its own rhythm: weekly for "manage closely", monthly updates for "keep satisfied".</p>
+      </div>
+
+      <div class="sample">
+        <div class="sample-head"><h3>RACI for PI decisions</h3><span class="tag">Illustrative</span></div>
+        <div class="scroll">
+          <table class="raci" style="min-width:420px">
+            <thead><tr><th>Decision</th><th>EXCO</th><th>Delivery lead</th><th>Product owner</th><th>Scrum Masters</th><th>Client</th></tr></thead>
+            <tbody>
+              <tr><td>PI objectives</td><td class="c">C</td><td class="c A">A</td><td class="c">R</td><td class="c">C</td><td class="c">I</td></tr>
+              <tr><td>Client milestone dates</td><td class="c">I</td><td class="c A">A</td><td class="c">C</td><td class="c">C</td><td class="c">I</td></tr>
+              <tr><td>Major scope change</td><td class="c A">A</td><td class="c">R</td><td class="c">R</td><td class="c">C</td><td class="c">C</td></tr>
+              <tr><td>Release go / no-go</td><td class="c">I</td><td class="c A">A</td><td class="c">C</td><td class="c">R</td><td class="c">C</td></tr>
+              <tr><td>Escalation to EXCO</td><td class="c">I</td><td class="c A">A</td><td class="c">C</td><td class="c">R</td><td class="c">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="caption">R responsible · A accountable · C consulted · I informed</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="eyebrow">Credentials</div>
+    <h2>Certifications</h2>
+    <p class="muted">PRINCE2 certificates can be verified with PeopleCert using the numbers below.</p>
+  </div>
+  <div class="creds">
+    <div class="cred"><b>PRINCE2 Agile Expert</b><code>PeopleCert · GR470000856JC · valid to Oct 2028</code></div>
+    <div class="cred"><b>PRINCE2 Agile Practitioner</b><code>PeopleCert · GR469000856JC</code></div>
+    <div class="cred"><b>PRINCE2 Agile Foundation</b><code>PeopleCert · GR468001322JC</code></div>
+    <div class="cred"><b>SAFe Scrum Master</b><code>Scaled Agile</code></div>
+    <div class="cred"><b>ITIL Foundation</b><code>IT service management</code></div>
+    <div class="cred"><b>Azure Administrator Associate</b><code>Microsoft · also Azure Fundamentals</code></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="eyebrow">Career</div>
+    <h2>Fifteen years, from infrastructure to portfolio leadership</h2>
+  </div>
+  <div class="timeline">
+    <div><span class="when">2024 – present</span><b>Project Manager · Interswitch East Africa</b><span class="muted">Payments delivery; PI planning and Scrum of Scrums across five squads; reporting on a 110-project portfolio; acting line manager of three PMs</span></div>
+    <div><span class="when">2023 – 2024</span><b>Consultant Project Manager · Juniper Intakes</b><span class="muted">Technology projects and platform builds for hospitals and SMEs</span></div>
+    <div><span class="when">2022 – 2023</span><b>Business Development Manager · Konvergenz Network Solutions</b><span class="muted">Public-sector digital transformation; five proposals won</span></div>
+    <div><span class="when">2021 – 2022</span><b>Enterprise Systems Manager · Computer Revolution Africa</b><span class="muted">15 clients including six major parastatals; a platform serving around one million farmers</span></div>
+    <div><span class="when">2021</span><b>IT Lead (Projects) · Textbook Centre</b><span class="muted">Infrastructure and cloud across 11 branches; IT-security initiatives</span></div>
+    <div><span class="when">2008 – 2020</span><b>System Administrator, earlier Support Assistant · Kenya Power</b><span class="muted">KES 650M across three infrastructure programmes</span></div>
+  </div>
+</section>
+
+<footer>
+  <span>Joyce Chagarii · Nairobi, Kenya · jchagarii@outlook.com</span>
+  <span>Full CV available on request.</span>
+</footer>
+
+</div>
+
+<script>
+document.getElementById('copyEmail').addEventListener('click', function () {
+  var btn = this, txt = document.getElementById('email').textContent;
+  function done(msg) { btn.textContent = msg; setTimeout(function () { btn.textContent = 'Copy email'; }, 1800); }
+  function select() { var r = document.createRange(); r.selectNodeContents(document.getElementById('email')); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); done('Selected'); }
+  try { navigator.clipboard.writeText(txt).then(function () { done('Copied'); }, select); } catch (e) { select(); }
+});
+</script>
+</body>
+</html>
